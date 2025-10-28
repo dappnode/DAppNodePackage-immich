@@ -1,0 +1,34 @@
+{
+  "name": "immich.dnp.dappnode.eth",
+  "version": "0.1.0",
+  "description": "immich.dnp.dappnode.eth description",
+  "type": "service",
+  "author": "dappnode",
+  "categories": ["Developer tools"],
+  "links": {
+    "homepage": "https://your-project-homepage-or-docs.io"
+  },
+  "license": "GPL-3.0",
+  "upstream": [
+    {
+      "repo": "ghcr.io/immich-app/immich-server",
+      "version": "release",
+      "arg": "IMMICH_VERSION"
+    },
+    {
+      "repo": "ghcr.io/immich-app/immich-machine-learning",
+      "version": "release",
+      "arg": "IMMICH_VERSION"
+    },
+    {
+      "repo": "docker.io/valkey/valkey",
+      "version": "8-bookworm",
+      "arg": "VALKEY_VERSION"
+    },
+    {
+      "repo": "ghcr.io/immich-app/postgres",
+      "version": "14-vectorchord0.4.3-pgvectors0.2.0",
+      "arg": "POSTGRES_VERSION"
+    }
+  ]
+}

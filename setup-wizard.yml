@@ -1,0 +1,53 @@
+version: "2"
+fields:
+
+  - id: upload_location
+    target:
+      type: environment
+      name: UPLOAD_LOCATION
+      service: [immich-server, immich-machine-learning]
+    title: Upload Location
+    description: "Directory for uploaded files"
+    required: true
+    default: "./library"
+
+  - id: db_data_location
+    target:
+      type: environment
+      name: DB_DATA_LOCATION
+      service: [database]
+    title: Database Data Location
+    description: "Directory for Postgres data files"
+    required: true
+    default: "./postgres"
+
+  - id: db_username
+    target:
+      type: environment
+      name: DB_USERNAME
+      service: [immich-server, database]
+    title: Database Username
+    description: "Username for Postgres"
+    required: true
+    default: "postgres"
+
+  - id: db_password
+    target:
+      type: environment
+      name: DB_PASSWORD
+      service: [immich-server, database]
+    title: Database Password
+    description: "Password for Postgres"
+    required: true
+    secret: true
+    default: "postgres"
+
+  - id: db_database_name
+    target:
+      type: environment
+      name: DB_DATABASE_NAME
+      service: [immich-server, database]
+    title: Database Name
+    description: "Name of the Immich database"
+    required: true
+    default: "immich"
