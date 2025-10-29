@@ -6,8 +6,9 @@
   "author": "dappnode",
   "categories": ["Developer tools"],
   "links": {
-    "homepage": "https://your-project-homepage-or-docs.io"
-  },
+    "UI": "http://immich-server.immich.dappnode:2283/",
+    "docs": "https://immich.app/"
+   },
   "license": "GPL-3.0",
   "upstream": [
     {
