@@ -13,12 +13,12 @@
   "upstream": [
     {
       "repo": "ghcr.io/immich-app/immich-server",
-      "version": "release",
+      "version": "v2.1.0",
       "arg": "IMMICH_VERSION"
     },
     {
       "repo": "ghcr.io/immich-app/immich-machine-learning",
-      "version": "release",
+      "version": "v2.1.0",
       "arg": "IMMICH_VERSION"
     },
     {
