@@ -4,7 +4,7 @@
   "description": "immich.dnp.dappnode.eth description",
   "type": "service",
   "author": "dappnode",
-  "categories": ["Developer tools"],
+  "categories": ["AI"],
   "links": {
     "UI": "http://immich-server.immich.dappnode:2283/",
     "docs": "https://immich.app/"
