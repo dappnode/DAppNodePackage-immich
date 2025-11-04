@@ -1,7 +1,7 @@
 {
   "name": "immich.dnp.dappnode.eth",
   "version": "0.1.0",
-  "description": "immich.dnp.dappnode.eth description",
+  "description": "Self hosted image management solution with local face recognition and categorization",
   "type": "service",
   "author": "dappnode",
   "categories": ["AI"],
