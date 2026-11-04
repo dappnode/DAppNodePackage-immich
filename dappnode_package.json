@@ -13,17 +13,17 @@
   "upstream": [
     {
       "repo": "ghcr.io/immich-app/immich-server",
-      "version": "v2.1.0",
+      "version": "v3.3.5",
       "arg": "IMMICH_VERSION"
     },
     {
       "repo": "ghcr.io/immich-app/immich-machine-learning",
-      "version": "v2.1.0",
+      "version": "v3.3.5",
       "arg": "IMMICH_VERSION"
     },
     {
       "repo": "docker.io/valkey/valkey",
-      "version": "8-bookworm",
+      "version": "9",
       "arg": "VALKEY_VERSION"
     },
     {

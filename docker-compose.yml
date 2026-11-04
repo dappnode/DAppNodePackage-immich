@@ -4,7 +4,7 @@ services:
     build:
       context: ./immich-server
       args:
-        IMMICH_VERSION: v2.1.0
+        IMMICH_VERSION: v3.3.5
     environment:
       DB_USERNAME: "postgres"
       DB_PASSWORD: "postgres"
@@ -22,7 +22,7 @@ services:
     build:
       context: ./immich-machine-learning
       args:
-        IMMICH_VERSION: v2.1.0
+        IMMICH_VERSION: v3.3.5
     environment:
       UPLOAD_LOCATION: "./library"
     volumes:
@@ -34,7 +34,7 @@ services:
     build:
       context: ./redis
       args:
-        VALKEY_VERSION: 8-bookworm
+        VALKEY_VERSION: 9
     environment: {}
     volumes:
       - redis-data:/data
@@ -55,6 +55,8 @@ services:
     volumes:
       - postgres-data:/var/lib/postgresql/data
     restart: always
+    healthcheck:
+      disable: false
 
 volumes:
   immich-server-upload: {}
