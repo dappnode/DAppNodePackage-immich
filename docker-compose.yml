@@ -34,7 +34,7 @@ services:
     build:
       context: ./redis
       args:
-        VALKEY_VERSION: 9
+        VALKEY_VERSION: "9"
     environment: {}
     volumes:
       - redis-data:/data
