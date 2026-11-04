@@ -1,20 +1,22 @@
 {
-  "name": "immich.dnp.dappnode.eth",
-  "version": "0.1.0",
-  "description": "Self hosted image management solution with local face recognition and categorization",
-  "type": "service",
   "author": "dappnode",
-  "categories": ["AI"],
+  "categories": [
+    "AI"
+  ],
+  "description": "Self hosted image management solution with local face recognition and categorization",
+  "license": "GPL-3.0",
   "links": {
     "UI": "http://immich-server.immich.dappnode:2283/",
     "docs": "https://immich.app/"
   },
-  "license": "GPL-3.0",
+  "name": "immich.dnp.dappnode.eth",
+  "type": "service",
   "upstream": [
     {
+      "arg": "IMMICH_VERSION",
       "repo": "immich-app/immich",
-      "version": "v3.3.5",
-      "arg": "IMMICH_VERSION"
+      "version": "v3.3.6"
     }
-  ]
+  ],
+  "version": "0.1.2"
 }
