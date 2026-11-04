@@ -10,9 +10,6 @@
     "docs": "https://immich.app/"
   },
   "license": "GPL-3.0",
-  "requirements": {
-    "minimumDappnodeVersion": "0.3.19"
-  },
   "upstream": [
     {
       "repo": "immich-app/immich",
