@@ -34,7 +34,7 @@ services:
     build:
       context: ./redis
       args:
-        VALKEY_VERSION: 9
+        VALKEY_VERSION: "9"
     environment: {}
     volumes:
       - redis-data:/data
@@ -54,6 +54,7 @@ services:
       DB_DATA_LOCATION: "./postgres"
     volumes:
       - postgres-data:/var/lib/postgresql/data
+    shm_size: 128mb
     restart: always
     healthcheck:
       disable: false

@@ -8,28 +8,16 @@
   "links": {
     "UI": "http://immich-server.immich.dappnode:2283/",
     "docs": "https://immich.app/"
-   },
+  },
   "license": "GPL-3.0",
+  "requirements": {
+    "minimumDappnodeVersion": "0.3.19"
+  },
   "upstream": [
     {
-      "repo": "ghcr.io/immich-app/immich-server",
+      "repo": "immich-app/immich",
       "version": "v3.3.5",
       "arg": "IMMICH_VERSION"
-    },
-    {
-      "repo": "ghcr.io/immich-app/immich-machine-learning",
-      "version": "v3.3.5",
-      "arg": "IMMICH_VERSION"
-    },
-    {
-      "repo": "docker.io/valkey/valkey",
-      "version": "9",
-      "arg": "VALKEY_VERSION"
-    },
-    {
-      "repo": "ghcr.io/immich-app/postgres",
-      "version": "14-vectorchord0.4.3-pgvectors0.2.0",
-      "arg": "POSTGRES_VERSION"
     }
   ]
 }
