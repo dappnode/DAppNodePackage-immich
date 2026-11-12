@@ -15,7 +15,7 @@
     {
       "arg": "IMMICH_VERSION",
       "repo": "immich-app/immich",
-      "version": "v3.4.0"
+      "version": "v3.4.1"
     }
   ],
   "version": "0.1.2"
